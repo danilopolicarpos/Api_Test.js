@@ -36,3 +36,8 @@ Abra uma nova aba e digite o comando abaixo:
 npm run test
 ```
 
+## Usando lint no código
+```
+npm run lint
+```
+
