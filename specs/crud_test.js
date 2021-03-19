@@ -1,13 +1,12 @@
 "use strict";
 
-var request = require("supertest"),
-    expect = require("chai").expect,
+var request = require("supertest");
+var expect = require("chai").expect,
     joiAssert = require("joi-assert");
 
-const {
-    schema_users,  
-  } = require("../data/schema_users.js");
-
+const schema_users = require("../data/schema_users.js");
+const describe ='';
+const it ='' ;
 const request_timeout = 15000;
 const URL = process.env.NODE_ENV;
 const ENDPOINT = '/users';
