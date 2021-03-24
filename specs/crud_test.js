@@ -8,7 +8,7 @@ const {
     schema_users,  
   } = require("../data/schema_users.js");
 
-const request_timeout = 80000;
+const request_timeout = 15000;
 const URL = process.env.NODE_ENV;
 const ENDPOINT = '/users';
 const USERS = {
@@ -59,7 +59,10 @@ describe("Gamefication test_api e contrato", function() {
        });
     });
 
-    it("Realizar uma requisição DELETE",function(done) {
+});
+
+describe("Gamefication test_api DELETE", function() {
+it("Realizar uma requisição DELETE",function(done) {
     this.timeout(request_timeout);
     request(URL)
     .delete(UPDATE)
@@ -69,6 +72,4 @@ describe("Gamefication test_api e contrato", function() {
         done(err);
        });
     });
-
 });
-

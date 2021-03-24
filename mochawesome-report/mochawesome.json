@@ -1,13 +1,13 @@
 {
   "stats": {
-    "suites": 1,
+    "suites": 2,
     "tests": 4,
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-19T01:49:52.756Z",
-    "end": "2021-03-19T01:49:52.825Z",
-    "duration": 69,
+    "start": "2021-03-24T18:46:03.121Z",
+    "end": "2021-03-24T18:46:03.250Z",
+    "duration": 129,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "bd4b9b44-7455-4eb7-a269-acbc027d2ab7",
+    "uuid": "feb5fc82-12c3-4e0e-94ad-4d0d3da02248",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "e766a4c0-1625-462a-8a4c-5c70f02e0caa",
+        "uuid": "abf086a0-edd4-4f1b-aab2-e34842d7c5a8",
         "title": "Gamefication test_api e contrato",
         "fullFile": "/Users/danilo.policarpo/dev/Api_test_js/specs/crud_test.js",
         "file": "/specs/crud_test.js",
@@ -39,16 +39,16 @@
             "title": "Realizar uma requisição GET",
             "fullTitle": "Gamefication test_api e contrato Realizar uma requisição GET",
             "timedOut": false,
-            "duration": 33,
+            "duration": 49,
             "state": "passed",
-            "speed": "fast",
+            "speed": "medium",
             "pass": true,
             "fail": false,
             "pending": false,
             "code": "this.timeout(request_timeout);\nrequest(URL)\n.get(ENDPOINT)\n.expect(\"Content-Type\", /json/)\n.end(function(err, res) {\n    expect(res.status).to.be.eql(200);\n    joiAssert(res.body, schema_users);\n    done(err);\n    });",
             "err": {},
             "isRoot": false,
-            "uuid": "601d5819-66bb-43a9-8082-e6bb84366ba7",
+            "uuid": "7129ce19-24ac-4c4f-90d5-a9b1aa1d7694",
             "isHook": false,
             "skipped": false
           },
@@ -65,7 +65,7 @@
             "code": "this.timeout(request_timeout);\nrequest(URL)\n.post(ENDPOINT)\n.send(USERS)\n.expect(\"Content-Type\", /json/)\n.end(function(err, res) {\n    expect(res.status).to.be.eql(201);\n    done(err);\n    });",
             "err": {},
             "isRoot": false,
-            "uuid": "7fceb6c4-c57b-4b00-9cd9-ca1d4ea4e7bd",
+            "uuid": "b0ee0030-ae57-4af2-b58c-090f46098359",
             "isHook": false,
             "skipped": false
           },
@@ -73,7 +73,7 @@
             "title": "Realizar uma requisição PUT",
             "fullTitle": "Gamefication test_api e contrato Realizar uma requisição PUT",
             "timedOut": false,
-            "duration": 6,
+            "duration": 9,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -82,15 +82,38 @@
             "code": "this.timeout(request_timeout);\nrequest(URL)\n.put(UPDATE)\n.send(UPDATE_USERS)\n.expect(\"Content-Type\", /json/)\n.end(function(err, res) {\n    expect(res.status).to.be.eql(200);\n    done(err);\n   });",
             "err": {},
             "isRoot": false,
-            "uuid": "e4c96202-d984-42b7-85a4-c46cf8b8e37e",
+            "uuid": "8b5a7f63-75f2-4e5d-8bd5-193b2a2299f1",
             "isHook": false,
             "skipped": false
-          },
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "7129ce19-24ac-4c4f-90d5-a9b1aa1d7694",
+          "b0ee0030-ae57-4af2-b58c-090f46098359",
+          "8b5a7f63-75f2-4e5d-8bd5-193b2a2299f1"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 66,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "74ca6851-77f1-4f26-b3a7-d939d204ef4a",
+        "title": "Gamefication test_api DELETE",
+        "fullFile": "/Users/danilo.policarpo/dev/Api_test_js/specs/crud_test.js",
+        "file": "/specs/crud_test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
           {
             "title": "Realizar uma requisição DELETE",
-            "fullTitle": "Gamefication test_api e contrato Realizar uma requisição DELETE",
+            "fullTitle": "Gamefication test_api DELETE Realizar uma requisição DELETE",
             "timedOut": false,
-            "duration": 8,
+            "duration": 19,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -99,22 +122,19 @@
             "code": "this.timeout(request_timeout);\nrequest(URL)\n.delete(UPDATE)\n.expect(\"Content-Type\", /json/)\n.end(function(err, res) {\n    expect(res.status).to.be.eql(200);\n    done(err);\n   });",
             "err": {},
             "isRoot": false,
-            "uuid": "a4c2f063-c165-400c-b0c6-94456f35b6d3",
+            "uuid": "a566aabc-d73c-4c4d-afb4-dffc93b362dd",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "601d5819-66bb-43a9-8082-e6bb84366ba7",
-          "7fceb6c4-c57b-4b00-9cd9-ca1d4ea4e7bd",
-          "e4c96202-d984-42b7-85a4-c46cf8b8e37e",
-          "a4c2f063-c165-400c-b0c6-94456f35b6d3"
+          "a566aabc-d73c-4c4d-afb4-dffc93b362dd"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 55,
+        "duration": 19,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
